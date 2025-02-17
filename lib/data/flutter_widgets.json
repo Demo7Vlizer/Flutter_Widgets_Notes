@@ -1,0 +1,867 @@
+{
+  "widgets": [
+    {
+      "name": "AutocompleteCore",
+      "category": "Input",
+      "href": "widgets/AutocompleteCore-class.html",
+      "description": "A widget that implements the core autocomplete functionality."
+    },
+    {
+      "name": "Badge",
+      "category": "Material",
+      "href": "material/Badge-class.html",
+      "description": "A Material Design badge that can be overlaid on another widget."
+    },
+    {
+      "name": "Banner",
+      "category": "Material", 
+      "href": "material/Banner-class.html",
+      "description": "A Material Design banner that displays an important message and optional actions."
+    },
+    {
+      "name": "BottomSheet",
+      "category": "Material",
+      "href": "material/BottomSheet-class.html", 
+      "description": "A Material Design bottom sheet that slides up from the bottom of the screen."
+    },
+    {
+      "name": "ButtonBar",
+      "category": "Material",
+      "href": "material/ButtonBar-class.html",
+      "description": "A horizontal arrangement of buttons with specific layout rules."
+    },
+    {
+      "name": "CupertinoButton",
+      "category": "Cupertino",
+      "href": "cupertino/CupertinoButton-class.html",
+      "description": "An iOS-style button."
+    },
+    {
+      "name": "CupertinoNavigationBar",
+      "category": "Cupertino",
+      "href": "cupertino/CupertinoNavigationBar-class.html",
+      "description": "An iOS-style navigation bar."
+    },
+    {
+      "name": "DataTable",
+      "category": "Material",
+      "href": "material/DataTable-class.html",
+      "description": "A Material Design data table that shows data using rows and columns."
+    },
+    {
+      "name": "DatePicker",
+      "category": "Material",
+      "href": "material/DatePicker-class.html",
+      "description": "A Material Design date picker dialog."
+    },
+    {
+      "name": "DragTarget",
+      "category": "Interaction",
+      "href": "widgets/DragTarget-class.html",
+      "description": "A widget that receives data when a Draggable widget is dropped."
+    },
+    {
+      "name": "Draggable",
+      "category": "Interaction",
+      "href": "widgets/Draggable-class.html",
+      "description": "A widget that can be dragged from one place to another."
+    },
+    {
+      "name": "ExpansionPanel",
+      "category": "Material",
+      "href": "painting/AlignmentGeometry-class.html"
+    },
+    {
+      "name": "AlignmentGeometryTween",
+      "href": "rendering/AlignmentGeometryTween-class.html"
+    },
+    {
+      "name": "AlignmentTween",
+      "href": "rendering/AlignmentTween-class.html"
+    },
+    {
+      "name": "AlignTransition",
+      "href": "widgets/AlignTransition-class.html"
+    },
+    {
+      "name": "AnimatedAlign",
+      "category": "Animation",
+      "href": "widgets/AnimatedAlign-class.html",
+      "description": "Animated version of Align that gradually changes its values over a period."
+    },
+    {
+      "name": "AnimatedBuilder",
+      "category": "Animation",
+      "href": "widgets/AnimatedBuilder-class.html",
+      "description": "A widget that rebuilds when an Animation changes value."
+    },
+    {
+      "name": "AnimatedContainer",
+      "category": "Animation",
+      "href": "widgets/AnimatedContainer-class.html",
+      "description": "A container that gradually changes its values over a period."
+    },
+    {
+      "name": "AnimatedCrossFade",
+      "category": "Animation",
+      "href": "widgets/AnimatedCrossFade-class.html",
+      "description": "A widget that cross-fades between two given children."
+    },
+    {
+      "name": "AnimatedDefaultTextStyle",
+      "category": "Animation",
+      "href": "widgets/AnimatedDefaultTextStyle-class.html",
+      "description": "Animated version of DefaultTextStyle that automatically transitions the default text style."
+    },
+    {
+      "name": "AnimatedList",
+      "category": "Scrolling",
+      "href": "widgets/AnimatedList-class.html",
+      "description": "A scrolling container that animates items when they are inserted or removed."
+    },
+    {
+      "name": "AnimatedOpacity",
+      "category": "Animation",
+      "href": "widgets/AnimatedOpacity-class.html",
+      "description": "Animated version of Opacity that gradually changes its value over a period."
+    },
+    {
+      "name": "AnimatedPositioned",
+      "category": "Animation",
+      "href": "widgets/AnimatedPositioned-class.html",
+      "description": "Animated version of Positioned that automatically transitions the child's position."
+    },
+    {
+      "name": "AnimatedSize",
+      "category": "Animation",
+      "href": "widgets/AnimatedSize-class.html",
+      "description": "A widget that automatically transitions its size over a given duration."
+    },
+    {
+      "name": "AppBar",
+      "category": "Material",
+      "href": "material/AppBar-class.html",
+      "description": "A Material Design app bar."
+    },
+    {
+      "name": "AspectRatio",
+      "category": "Layout",
+      "href": "widgets/AspectRatio-class.html",
+      "description": "A widget that attempts to size the child to a specific aspect ratio."
+    },
+    {
+      "name": "BackdropFilter",
+      "category": "Effects",
+      "href": "widgets/BackdropFilter-class.html",
+      "description": "A widget that applies a filter to the existing painted content."
+    },
+    {
+      "name": "BottomNavigationBar",
+      "category": "Navigation",
+      "href": "material/BottomNavigationBar-class.html",
+      "description": "A material widget displayed at the bottom of an app for selecting among a small number of views."
+    },
+    {
+      "name": "Card",
+      "category": "Material",
+      "href": "material/Card-class.html",
+      "description": "A Material Design card: a panel with slightly rounded corners and an elevation shadow."
+    },
+    {
+      "name": "Center",
+      "category": "Layout",
+      "href": "widgets/Center-class.html",
+      "description": "A widget that centers its child within itself."
+    },
+    {
+      "name": "Chip",
+      "category": "Material",
+      "href": "material/Chip-class.html",
+      "description": "A Material Design chip: a compact element that represents an attribute, text, entity, or action."
+    },
+    {
+      "name": "ClipOval",
+      "category": "Painting",
+      "href": "widgets/ClipOval-class.html",
+      "description": "A widget that clips its child using an oval."
+    },
+    {
+      "name": "ClipPath",
+      "category": "Painting",
+      "href": "widgets/ClipPath-class.html",
+      "description": "A widget that clips its child using a path."
+    },
+    {
+      "name": "ClipRect",
+      "category": "Painting",
+      "href": "widgets/ClipRect-class.html",
+      "description": "A widget that clips its child using a rectangle."
+    },
+    {
+      "name": "ClipRRect",
+      "category": "Painting",
+      "href": "widgets/ClipRRect-class.html",
+      "description": "A widget that clips its child using a rounded rectangle."
+    },
+    {
+      "name": "Column",
+      "category": "Layout",
+      "href": "widgets/Column-class.html",
+      "description": "A widget that displays its children in a vertical array."
+    },
+    {
+      "name": "Container",
+      "category": "Layout",
+      "href": "widgets/Container-class.html",
+      "description": "A convenience widget that combines common painting, positioning, and sizing widgets."
+    },
+    {
+      "name": "CustomPaint",
+      "category": "Painting",
+      "href": "widgets/CustomPaint-class.html",
+      "description": "A widget that provides a canvas on which to draw during the paint phase."
+    },
+    {
+      "name": "DecoratedBox",
+      "category": "Painting",
+      "href": "widgets/DecoratedBox-class.html",
+      "description": "A widget that paints a Decoration either before or after its child paints."
+    },
+    {
+      "name": "DefaultTextStyle",
+      "category": "Styling",
+      "href": "widgets/DefaultTextStyle-class.html",
+      "description": "A widget that specifies the default text style for its descendants."
+    },
+    {
+      "name": "Divider",
+      "category": "Material",
+      "href": "material/Divider-class.html",
+      "description": "A thin horizontal line, with padding on either side."
+    },
+    {
+      "name": "Drawer",
+      "category": "Navigation",
+      "href": "material/Drawer-class.html",
+      "description": "A Material Design panel that slides in horizontally from the edge of a Scaffold."
+    },
+    {
+      "name": "Expanded",
+      "category": "Layout",
+      "href": "widgets/Expanded-class.html",
+      "description": "A widget that expands a child of a Row, Column, or Flex."
+    },
+    {
+      "name": "FittedBox",
+      "category": "Layout",
+      "href": "widgets/FittedBox-class.html",
+      "description": "Scales and positions its child within itself."
+    },
+    {
+      "name": "Flexible",
+      "category": "Layout",
+      "href": "widgets/Flexible-class.html",
+      "description": "A widget that controls how a child of a Row, Column, or Flex flexes."
+    },
+    {
+      "name": "FloatingActionButton",
+      "category": "Material",
+      "href": "material/FloatingActionButton-class.html",
+      "description": "A circular button that hovers over content to promote a primary action in the application."
+    },
+    {
+      "name": "Form",
+      "category": "Input",
+      "href": "widgets/Form-class.html",
+      "description": "A container for grouping together multiple form field widgets."
+    },
+    {
+      "name": "GestureDetector",
+      "category": "Interaction",
+      "href": "widgets/GestureDetector-class.html",
+      "description": "A widget that detects gestures."
+    },
+    {
+      "name": "GridView",
+      "category": "Scrolling",
+      "href": "widgets/GridView-class.html",
+      "description": "A scrollable, 2D array of widgets."
+    },
+    {
+      "name": "Hero",
+      "category": "Navigation",
+      "href": "widgets/Hero-class.html",
+      "description": "A widget that marks its child as being a candidate for hero animations."
+    },
+    {
+      "name": "Image",
+      "category": "Assets",
+      "href": "widgets/Image-class.html",
+      "description": "A widget that displays an image."
+    },
+    {
+      "name": "InkWell",
+      "category": "Material",
+      "href": "material/InkWell-class.html",
+      "description": "A rectangular area of a Material that responds to touch."
+    },
+    {
+      "name": "ListView",
+      "category": "Scrolling",
+      "href": "widgets/ListView-class.html",
+      "description": "A scrollable list of widgets arranged linearly."
+    },
+    {
+      "name": "MediaQuery",
+      "category": "Layout",
+      "href": "widgets/MediaQuery-class.html",
+      "description": "Establishes a subtree in which media queries resolve to the given data."
+    },
+    {
+      "name": "Padding",
+      "category": "Layout",
+      "href": "widgets/Padding-class.html",
+      "description": "A widget that insets its child by the given padding."
+    },
+    {
+      "name": "PopupMenuButton",
+      "category": "Material",
+      "href": "material/PopupMenuButton-class.html",
+      "description": "A button that shows a popup menu when pressed."
+    },
+    {
+      "name": "Row",
+      "category": "Layout",
+      "href": "widgets/Row-class.html",
+      "description": "A widget that displays its children in a horizontal array."
+    },
+    {
+      "name": "Scaffold",
+      "category": "Material",
+      "href": "material/Scaffold-class.html",
+      "description": "Implements the basic Material Design visual layout structure."
+    },
+    {
+      "name": "SingleChildScrollView",
+      "category": "Scrolling",
+      "href": "widgets/SingleChildScrollView-class.html",
+      "description": "A box in which a single widget can be scrolled."
+    },
+    {
+      "name": "SizedBox",
+      "category": "Layout",
+      "href": "widgets/SizedBox-class.html",
+      "description": "A box with a specified size."
+    },
+    {
+      "name": "Spacer",
+      "category": "Layout",
+      "href": "widgets/Spacer-class.html",
+      "description": "Creates an adjustable, empty spacer that can be used to tune the spacing between widgets."
+    },
+    {
+      "name": "Stack",
+      "category": "Layout",
+      "href": "widgets/Stack-class.html",
+      "description": "A widget that positions its children relative to the edges of its box."
+    },
+    {
+      "name": "StatefulWidget",
+      "category": "Basic",
+      "href": "widgets/StatefulWidget-class.html",
+      "description": "A widget that has mutable state."
+    },
+    {
+      "name": "StatelessWidget",
+      "category": "Basic",
+      "href": "widgets/StatelessWidget-class.html",
+      "description": "A widget that does not require mutable state."
+    },
+    {
+      "name": "TabBar",
+      "category": "Navigation",
+      "href": "material/TabBar-class.html",
+      "description": "A Material Design widget that displays a horizontal row of tabs."
+    },
+    {
+      "name": "Text",
+      "category": "Basic",
+      "href": "widgets/Text-class.html",
+      "description": "A run of text with a single style."
+    },
+    {
+      "name": "TextField",
+      "category": "Input",
+      "href": "material/TextField-class.html",
+      "description": "A Material Design text field."
+    },
+    {
+      "name": "Visibility",
+      "category": "Layout",
+      "href": "widgets/Visibility-class.html",
+      "description": "A widget that shows or hides its child."
+    },
+    {
+      "name": "Wrap",
+      "category": "Layout",
+      "href": "widgets/Wrap-class.html",
+      "description": "A widget that displays its children in multiple horizontal or vertical runs."
+    },
+    {
+      "name": "CircularProgressIndicator",
+      "category": "Material",
+      "href": "material/CircularProgressIndicator-class.html",
+      "description": "A Material Design circular progress indicator, which spins to indicate that the application is busy."
+    },
+    {
+      "name": "Icon",
+      "category": "Basic",
+      "href": "widgets/Icon-class.html",
+      "description": "A graphical icon widget drawn with a glyph from a font."
+    },
+    {
+      "name": "LinearProgressIndicator",
+      "category": "Material",
+      "href": "material/LinearProgressIndicator-class.html",
+      "description": "A Material Design linear progress indicator, which displays progress along a line."
+    },
+    {
+      "name": "ListTile",
+      "category": "Material",
+      "href": "material/ListTile-class.html",
+      "description": "A single fixed-height row that typically contains text as well as a leading or trailing icon."
+    },
+    {
+      "name": "MaterialApp",
+      "category": "Material",
+      "href": "material/MaterialApp-class.html",
+      "description": "An application that uses Material Design."
+    },
+    {
+      "name": "NavigationBar",
+      "category": "Material",
+      "href": "material/NavigationBar-class.html",
+      "description": "A Material Design 3 navigation bar, which is displayed at the bottom of the screen."
+    },
+    {
+      "name": "NavigationRail",
+      "category": "Material",
+      "href": "material/NavigationRail-class.html",
+      "description": "A Material Design 3 navigation rail, which is displayed on the left or right side of the screen."
+    },
+    {
+      "name": "Opacity",
+      "category": "Painting",
+      "href": "widgets/Opacity-class.html",
+      "description": "A widget that makes its child partially transparent."
+    },
+    {
+      "name": "OutlinedButton",
+      "category": "Material",
+      "href": "material/OutlinedButton-class.html",
+      "description": "A Material Design outlined button."
+    },
+    {
+      "name": "PageView",
+      "category": "Scrolling",
+      "href": "widgets/PageView-class.html",
+      "description": "A scrollable list that works page by page."
+    },
+    {
+      "name": "Positioned",
+      "category": "Layout",
+      "href": "widgets/Positioned-class.html",
+      "description": "A widget that controls where a child of a Stack is positioned."
+    },
+    {
+      "name": "PreferredSize",
+      "category": "Layout",
+      "href": "widgets/PreferredSize-class.html",
+      "description": "A widget with a preferred size that configures its child's layout constraints."
+    },
+    {
+      "name": "RadioListTile",
+      "category": "Material",
+      "href": "material/RadioListTile-class.html",
+      "description": "A ListTile with a Radio widget."
+    },
+    {
+      "name": "RawMaterialButton",
+      "category": "Material",
+      "href": "material/RawMaterialButton-class.html",
+      "description": "A Material Design button without pre-configured styles."
+    },
+    {
+      "name": "RefreshIndicator",
+      "category": "Material",
+      "href": "material/RefreshIndicator-class.html",
+      "description": "A Material Design pull-to-refresh indicator."
+    },
+    {
+      "name": "SelectableText",
+      "category": "Basic",
+      "href": "widgets/SelectableText-class.html",
+      "description": "A run of selectable text with a single style."
+    },
+    {
+      "name": "Slider",
+      "category": "Material",
+      "href": "material/Slider-class.html",
+      "description": "A Material Design slider input."
+    },
+    {
+      "name": "Switch",
+      "category": "Material",
+      "href": "material/Switch-class.html",
+      "description": "A Material Design switch that toggles between on and off."
+    },
+    {
+      "name": "TabBarView",
+      "category": "Material",
+      "href": "material/TabBarView-class.html",
+      "description": "A page view that displays the widget which corresponds to the currently selected tab."
+    },
+    {
+      "name": "Table",
+      "category": "Layout",
+      "href": "widgets/Table-class.html",
+      "description": "A widget that uses the table layout algorithm for its children."
+    },
+    {
+      "name": "TextButton",
+      "category": "Material",
+      "href": "material/TextButton-class.html",
+      "description": "A Material Design text button."
+    },
+    {
+      "name": "TextFormField",
+      "category": "Input",
+      "href": "material/TextFormField-class.html",
+      "description": "A Material Design text field that integrates with the Form widget."
+    },
+    {
+      "name": "Theme",
+      "category": "Styling",
+      "href": "material/Theme-class.html",
+      "description": "Applies a theme to descendant widgets."
+    },
+    {
+      "name": "TimePicker",
+      "category": "Material",
+      "href": "material/TimePicker-class.html",
+      "description": "A Material Design time picker dialog."
+    },
+    {
+      "name": "Transform",
+      "category": "Painting",
+      "href": "widgets/Transform-class.html",
+      "description": "A widget that applies a transformation before painting its child."
+    },
+    {
+      "name": "VerticalDivider",
+      "category": "Material",
+      "href": "material/VerticalDivider-class.html",
+      "description": "A thin vertical line, with padding on either side."
+    },
+    {
+      "name": "WillPopScope",
+      "category": "Navigation",
+      "href": "widgets/WillPopScope-class.html",
+      "description": "A widget that registers a callback to veto attempts by the user to dismiss the enclosing Navigator."
+    },
+    {
+      "name": "Dismissible",
+      "category": "Interaction",
+      "href": "widgets/Dismissible-class.html",
+      "description": "A widget that can be dismissed by dragging in the indicated direction."
+    },
+    {
+      "name": "ReorderableListView",
+      "category": "Scrolling",
+      "href": "widgets/ReorderableListView-class.html",
+      "description": "A list whose items the user can interactively reorder by dragging."
+    },
+    {
+      "name": "SafeArea",
+      "category": "Layout",
+      "href": "widgets/SafeArea-class.html",
+      "description": "A widget that insets its child by sufficient padding to avoid intrusions by the operating system."
+    },
+    {
+      "name": "Scrollbar",
+      "category": "Scrolling",
+      "href": "widgets/Scrollbar-class.html",
+      "description": "A Material Design scrollbar that indicates which portion of a scrollable widget is currently visible."
+    },
+    {
+      "name": "SnackBar",
+      "category": "Material",
+      "href": "material/SnackBar-class.html",
+      "description": "A lightweight message with an optional action which briefly displays at the bottom of the screen."
+    },
+    {
+      "name": "RichText",
+      "category": "Basic",
+      "href": "widgets/RichText-class.html",
+      "description": "A paragraph of rich text that supports multiple styles within the text."
+    },
+    {
+      "name": "Placeholder",
+      "category": "Basic",
+      "href": "widgets/Placeholder-class.html",
+      "description": "A widget that draws a box that represents where other widgets will one day be added."
+    },
+    {
+      "name": "OverflowBox",
+      "category": "Layout",
+      "href": "widgets/OverflowBox-class.html",
+      "description": "A widget that imposes different constraints on its child than it gets from its parent."
+    },
+    {
+      "name": "LimitedBox",
+      "category": "Layout",
+      "href": "widgets/LimitedBox-class.html",
+      "description": "A box that limits its size only when it's unconstrained."
+    },
+    {
+      "name": "ConstrainedBox",
+      "category": "Layout",
+      "href": "widgets/ConstrainedBox-class.html",
+      "description": "A widget that imposes additional constraints on its child."
+    },
+    {
+      "name": "IndexedStack",
+      "category": "Layout",
+      "href": "widgets/IndexedStack-class.html",
+      "description": "A Stack that shows a single child from a list of children."
+    },
+    {
+      "name": "Flow",
+      "category": "Layout",
+      "href": "widgets/Flow-class.html",
+      "description": "A widget that implements the flow layout algorithm."
+    },
+    {
+      "name": "CustomScrollView",
+      "category": "Scrolling",
+      "href": "widgets/CustomScrollView-class.html",
+      "description": "A ScrollView that creates custom scroll effects using slivers."
+    },
+    {
+      "name": "SliverAppBar",
+      "category": "Material",
+      "href": "material/SliverAppBar-class.html",
+      "description": "A Material Design app bar that integrates with a CustomScrollView."
+    },
+    {
+      "name": "SliverList",
+      "category": "Scrolling",
+      "href": "widgets/SliverList-class.html",
+      "description": "A sliver that places multiple box children in a linear array."
+    },
+    {
+      "name": "SliverGrid",
+      "category": "Scrolling",
+      "href": "widgets/SliverGrid-class.html",
+      "description": "A sliver that places multiple box children in a two dimensional arrangement."
+    },
+    {
+      "name": "ExpansionTile",
+      "category": "Material",
+      "href": "material/ExpansionTile-class.html",
+      "description": "A tile that expands or collapses when tapped, revealing or hiding a child widget."
+    },
+    {
+      "name": "CheckboxListTile",
+      "category": "Material",
+      "href": "material/CheckboxListTile-class.html",
+      "description": "A ListTile with a Checkbox."
+    },
+    {
+      "name": "Stepper",
+      "category": "Material",
+      "href": "material/Stepper-class.html",
+      "description": "A Material Design stepper widget that displays progress through a sequence of steps."
+    },
+    {
+      "name": "CupertinoPageScaffold",
+      "category": "Cupertino",
+      "href": "cupertino/CupertinoPageScaffold-class.html",
+      "description": "An iOS-style page scaffold that provides a navigation bar and content area."
+    },
+    {
+      "name": "FractionallySizedBox",
+      "category": "Layout",
+      "href": "widgets/FractionallySizedBox-class.html",
+      "description": "A widget that sizes its child to a fraction of the total available space."
+    },
+    {
+      "name": "FutureBuilder",
+      "category": "Async",
+      "href": "widgets/FutureBuilder-class.html",
+      "description": "Widget that builds itself based on the latest snapshot of interaction with a Future."
+    },
+    {
+      "name": "IconButton",
+      "category": "Material",
+      "href": "material/IconButton-class.html",
+      "description": "A Material Design icon button."
+    },
+    {
+      "name": "InheritedWidget",
+      "category": "Basic",
+      "href": "widgets/InheritedWidget-class.html",
+      "description": "Base class for widgets that efficiently propagate information down the tree."
+    },
+    {
+      "name": "InteractiveViewer",
+      "category": "Interaction",
+      "href": "widgets/InteractiveViewer-class.html",
+      "description": "A widget that enables pan and zoom interactions with its child."
+    },
+    {
+      "name": "LayoutBuilder",
+      "category": "Layout",
+      "href": "widgets/LayoutBuilder-class.html",
+      "description": "Builds a widget tree that can depend on the parent widget's size."
+    },
+    {
+      "name": "MaterialBanner",
+      "category": "Material",
+      "href": "material/MaterialBanner-class.html",
+      "description": "A Material Design banner that displays at the top of the screen."
+    },
+    {
+      "name": "NavigationDrawer",
+      "category": "Material",
+      "href": "material/NavigationDrawer-class.html",
+      "description": "A Material Design navigation drawer that slides in horizontally."
+    },
+    {
+      "name": "OrientationBuilder",
+      "category": "Layout",
+      "href": "widgets/OrientationBuilder-class.html",
+      "description": "Builds a widget tree that can depend on the parent widget's orientation."
+    },
+    {
+      "name": "PopupRoute",
+      "category": "Navigation",
+      "href": "widgets/PopupRoute-class.html",
+      "description": "A route that displays a popup above the current contents of the app."
+    },
+    {
+      "name": "ProgressIndicator",
+      "category": "Material",
+      "href": "material/ProgressIndicator-class.html",
+      "description": "A base class for Material Design progress indicators."
+    },
+    {
+      "name": "RawKeyboardListener",
+      "category": "Interaction",
+      "href": "widgets/RawKeyboardListener-class.html",
+      "description": "A widget that calls a callback whenever the user presses or releases a key on a keyboard."
+    },
+    {
+      "name": "StreamBuilder",
+      "category": "Async",
+      "href": "widgets/StreamBuilder-class.html",
+      "description": "Widget that builds itself based on the latest snapshot of interaction with a Stream."
+    },
+    {
+      "name": "ValueListenableBuilder",
+      "category": "Basic",
+      "href": "widgets/ValueListenableBuilder-class.html",
+      "description": "A widget that rebuilds when a ValueListenable changes value."
+    },
+    {
+      "name": "CupertinoActionSheet",
+      "category": "Cupertino",
+      "href": "cupertino/CupertinoActionSheet-class.html",
+      "description": "An iOS-style action sheet that presents the user with a set of alternatives."
+    },
+    {
+      "name": "CupertinoContextMenu",
+      "category": "Cupertino",
+      "href": "cupertino/CupertinoContextMenu-class.html",
+      "description": "An iOS-style context menu that appears when the user long-presses a widget."
+    },
+    {
+      "name": "CupertinoDatePicker",
+      "category": "Cupertino",
+      "href": "cupertino/CupertinoDatePicker-class.html",
+      "description": "An iOS-style date picker widget."
+    },
+    {
+      "name": "CupertinoScrollbar",
+      "category": "Cupertino",
+      "href": "cupertino/CupertinoScrollbar-class.html",
+      "description": "An iOS-style scrollbar that indicates which portion of a scrollable widget is currently visible."
+    },
+    {
+      "name": "CupertinoSwitch",
+      "category": "Cupertino",
+      "href": "cupertino/CupertinoSwitch-class.html",
+      "description": "An iOS-style switch that toggles between on and off."
+    },
+    {
+      "name": "MouseRegion",
+      "category": "Interaction",
+      "href": "widgets/MouseRegion-class.html",
+      "description": "A widget that tracks the movement of mice and trackpads."
+    },
+    {
+      "name": "NotificationListener",
+      "category": "Interaction",
+      "href": "widgets/NotificationListener-class.html",
+      "description": "A widget that listens for Notifications bubbling up the tree."
+    },
+    {
+      "name": "PhysicalModel",
+      "category": "Painting",
+      "href": "widgets/PhysicalModel-class.html",
+      "description": "A widget that applies a physical model to its child such as a shadow."
+    },
+    {
+      "name": "PhysicalShape",
+      "category": "Painting",
+      "href": "widgets/PhysicalShape-class.html",
+      "description": "A widget that applies a physical model to an arbitrary shape."
+    },
+    {
+      "name": "RotatedBox",
+      "category": "Painting",
+      "href": "widgets/RotatedBox-class.html",
+      "description": "A widget that rotates its child by a integral number of quarter turns."
+    },
+    {
+      "name": "ShaderMask",
+      "category": "Painting",
+      "href": "widgets/ShaderMask-class.html",
+      "description": "A widget that applies a shader to its child."
+    },
+    {
+      "name": "SliverPadding",
+      "category": "Scrolling",
+      "href": "widgets/SliverPadding-class.html",
+      "description": "A sliver that applies padding on each side of another sliver."
+    },
+    {
+      "name": "SliverToBoxAdapter",
+      "category": "Scrolling",
+      "href": "widgets/SliverToBoxAdapter-class.html",
+      "description": "A sliver that contains a single box widget."
+    },
+    {
+      "name": "ToggleButtons",
+      "category": "Material",
+      "href": "material/ToggleButtons-class.html",
+      "description": "A Material Design toggle button group."
+    },
+    {
+      "name": "Tooltip",
+      "category": "Basic",
+      "href": "widgets/Tooltip-class.html",
+      "description": "A widget that displays a message when the user long-presses a widget."
+    }
+  ]
+}
