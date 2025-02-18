@@ -12,6 +12,7 @@ class _ExpandedScreenState extends State<ExpandedScreen> {
   double _flexValue1 = 1;
   double _flexValue2 = 1;
   bool _isExpanded = true;
+  final Duration _animationDuration = const Duration(milliseconds: 300);
 
   @override
   Widget build(BuildContext context) {
@@ -379,14 +380,20 @@ Row(
                 const SizedBox(height: 16),
                 Container(
                   height: 100,
-                  color: Colors.grey[200],
+                  decoration: BoxDecoration(
+                    color: Colors.grey[200],
+                    borderRadius: BorderRadius.circular(8),
+                  ),
                   child: Row(
                     children: [
                       Container(
                         width: 100,
                         color: Colors.purple[100],
                         child: const Center(
-                          child: Text('Fixed\nWidth'),
+                          child: Text(
+                            'Fixed\nWidth',
+                            textAlign: TextAlign.center,
+                          ),
                         ),
                       ),
                       if (_isExpanded)
@@ -394,7 +401,10 @@ Row(
                           child: Container(
                             color: Colors.orange[100],
                             child: const Center(
-                              child: Text('Expanded'),
+                              child: Text(
+                                'Expanded\n(fills space)',
+                                textAlign: TextAlign.center,
+                              ),
                             ),
                           ),
                         )
@@ -403,7 +413,10 @@ Row(
                           child: Container(
                             color: Colors.orange[100],
                             child: const Center(
-                              child: Text('Flexible'),
+                              child: Text(
+                                'Flexible\n(natural size)',
+                                textAlign: TextAlign.center,
+                              ),
                             ),
                           ),
                         ),
@@ -411,24 +424,53 @@ Row(
                         width: 100,
                         color: Colors.purple[100],
                         child: const Center(
-                          child: Text('Fixed\nWidth'),
+                          child: Text(
+                            'Fixed\nWidth',
+                            textAlign: TextAlign.center,
+                          ),
                         ),
                       ),
                     ],
                   ),
                 ),
+                // Animated Description
                 const SizedBox(height: 16),
-                const Text(
-                  'Key Points:',
-                  style: TextStyle(fontWeight: FontWeight.bold),
-                ),
-                const SizedBox(height: 8),
-                const Text(
-                  '• Expanded always takes all available space\n'
-                  '• Flexible only takes the space it needs\n'
-                  '• Use Expanded when you want to fill the space\n'
-                  '• Use Flexible when you want natural sizing',
-                  style: TextStyle(color: Colors.black87),
+                AnimatedContainer(
+                  duration: _animationDuration,
+                  padding: const EdgeInsets.all(16),
+                  decoration: BoxDecoration(
+                    color: Colors.grey[50],
+                    borderRadius: BorderRadius.circular(8),
+                    border: Border.all(color: Colors.grey[300]!),
+                  ),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      AnimatedSwitcher(
+                        duration: _animationDuration,
+                        child: Text(
+                          _isExpanded
+                              ? '• Expanded widget fills all available space'
+                              : '• Flexible widget takes only needed space',
+                          key: ValueKey(_isExpanded),
+                          style: const TextStyle(
+                            color: Colors.black87,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                      const SizedBox(height: 8),
+                      Text(
+                        _isExpanded
+                            ? 'The Expanded widget forces its child to fill all available space in the main axis.'
+                            : 'The Flexible widget allows its child to size itself naturally, only taking the space it needs.',
+                        style: TextStyle(
+                          color: Colors.grey[600],
+                          fontSize: 14,
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
               ],
             ),
