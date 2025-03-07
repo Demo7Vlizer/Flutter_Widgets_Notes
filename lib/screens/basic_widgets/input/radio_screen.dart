@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_final_fields
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -22,6 +24,7 @@ class _RadioScreenState extends State<RadioScreen> with SingleTickerProviderStat
 
   // For custom radio
   int _customValue = 0;
+  // ignore: unused_field
   double _customSize = 24.0;
 
   // For interactive example

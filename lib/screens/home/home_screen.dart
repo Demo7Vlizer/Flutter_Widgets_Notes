@@ -25,28 +25,41 @@ class HomeScreen extends StatelessWidget {
               onChanged: controller.search,
             ),
             const SizedBox(height: 16),
-            Obx(() {
-              if (!controller.isSearching.value) {
-                return const CategoryListItem(
-                  title: 'Basic Widgets',
-                  route: '/basic',
-                );
-              } else {
-                return Expanded(
-                  child: ListView.builder(
+            Expanded(
+              child: Obx(() {
+                if (!controller.isSearching.value) {
+                  return ListView(
+                    children: [
+                      ListTile(
+                        leading: const Icon(Icons.compare_arrows),
+                        title: const Text('Widget Comparisons'),
+                        subtitle:
+                            const Text('Compare different types of widgets'),
+                        trailing: const Icon(Icons.chevron_right),
+                        onTap: () => Get.toNamed('/widget-comparisons'),
+                      ),
+                      const Divider(),
+                      const CategoryListItem(
+                        title: 'Basic Widgets',
+                        route: '/basic',
+                      ),
+                    ],
+                  );
+                } else {
+                  return ListView.builder(
                     itemCount: controller.searchResults.length,
                     itemBuilder: (context, index) {
                       return WidgetListItem(
                         widgetData: controller.searchResults[index],
                       );
                     },
-                  ),
-                );
-              }
-            }),
+                  );
+                }
+              }),
+            ),
           ],
         ),
       ),
     );
   }
-} 
+}
