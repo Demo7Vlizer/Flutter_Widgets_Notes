@@ -8,7 +8,7 @@ class TextFieldScreen extends StatefulWidget {
   State<TextFieldScreen> createState() => _TextFieldScreenState();
 }
 
-class _TextFieldScreenState extends State<TextFieldScreen> 
+class _TextFieldScreenState extends State<TextFieldScreen>
     with SingleTickerProviderStateMixin {
   bool _isPasswordVisible = false;
   final TextEditingController _passwordController = TextEditingController();
@@ -28,8 +28,16 @@ class _TextFieldScreenState extends State<TextFieldScreen>
   // For search animation
   bool _isSearching = false;
   final List<String> _searchResults = [
-    'Apple', 'Banana', 'Cherry', 'Date', 'Elderberry',
-    'Fig', 'Grape', 'Honeydew', 'Ice Apple', 'Jackfruit'
+    'Apple',
+    'Banana',
+    'Cherry',
+    'Date',
+    'Elderberry',
+    'Fig',
+    'Grape',
+    'Honeydew',
+    'Ice Apple',
+    'Jackfruit'
   ];
   List<String> _filteredResults = [];
 
@@ -72,9 +80,9 @@ class _TextFieldScreenState extends State<TextFieldScreen>
 
   void _validateEmail() {
     String email = _emailController.text;
-    bool emailValid = RegExp(r'^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$')
-        .hasMatch(email);
-    
+    bool emailValid =
+        RegExp(r'^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$').hasMatch(email);
+
     setState(() {
       _isValid = emailValid || email.isEmpty;
       if (!_isValid) {
@@ -271,7 +279,9 @@ TextField(
                     ),
                     child: ListView.builder(
                       shrinkWrap: true,
-                      itemCount: _filteredResults.isEmpty ? 1 : _filteredResults.length,
+                      itemCount: _filteredResults.isEmpty
+                          ? 1
+                          : _filteredResults.length,
                       itemBuilder: (context, index) {
                         if (_filteredResults.isEmpty) {
                           return const ListTile(
@@ -342,8 +352,8 @@ AnimatedContainer(
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(8),
                       ),
-                      errorText: _validationMessage.isNotEmpty 
-                          ? _validationMessage 
+                      errorText: _validationMessage.isNotEmpty
+                          ? _validationMessage
                           : null,
                     ),
                   ),
@@ -377,8 +387,8 @@ TextField(
                 prefixIcon: const Icon(Icons.lock),
                 suffixIcon: IconButton(
                   icon: Icon(
-                    _isPasswordVisible 
-                        ? Icons.visibility 
+                    _isPasswordVisible
+                        ? Icons.visibility
                         : Icons.visibility_off,
                   ),
                   onPressed: () {
@@ -423,8 +433,8 @@ TextField(
               onChanged: (String value) {
                 setState(() {
                   _characterCount = '${value.length}/$_maxLength';
-                  _counterColor = value.length > _maxLength * 0.8 
-                      ? Colors.red 
+                  _counterColor = value.length > _maxLength * 0.8
+                      ? Colors.red
                       : Colors.grey;
                 });
               },
@@ -438,8 +448,8 @@ TextField(
                   duration: const Duration(milliseconds: 300),
                   style: TextStyle(
                     color: _counterColor,
-                    fontWeight: _counterColor == Colors.red 
-                        ? FontWeight.bold 
+                    fontWeight: _counterColor == Colors.red
+                        ? FontWeight.bold
                         : FontWeight.normal,
                   ),
                   child: Text(_characterCount),
@@ -701,7 +711,8 @@ Column(
                       floatingLabelStyle: TextStyle(
                         color: _isTyping ? Colors.blue : Colors.grey,
                         fontSize: _isTyping ? 24 : 16,
-                        fontWeight: _isTyping ? FontWeight.bold : FontWeight.normal,
+                        fontWeight:
+                            _isTyping ? FontWeight.bold : FontWeight.normal,
                       ),
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(_isTyping ? 16 : 8),
@@ -785,8 +796,8 @@ AnimatedContainer(
                       onTap: () {
                         setState(() {
                           _selectedEmoji = _emojis[
-                            (_emojis.indexOf(_selectedEmoji) + 1) % _emojis.length
-                          ];
+                              (_emojis.indexOf(_selectedEmoji) + 1) %
+                                  _emojis.length];
                         });
                       },
                       child: Padding(
@@ -847,7 +858,8 @@ AnimatedContainer(
                       ),
                       AnimatedSwitcher(
                         duration: const Duration(milliseconds: 200),
-                        transitionBuilder: (Widget child, Animation<double> animation) {
+                        transitionBuilder:
+                            (Widget child, Animation<double> animation) {
                           return ScaleTransition(
                             scale: animation,
                             child: child,
@@ -938,13 +950,15 @@ Container(
                   onChanged: (value) {
                     if (value.length < 6) {
                       setState(() {
-                        _validationMessage = 'Password must be at least 6 characters';
+                        _validationMessage =
+                            'Password must be at least 6 characters';
                         _isValid = false;
                         _shakeController.forward(from: 0.0);
                       });
                     } else if (!value.contains(RegExp(r'[A-Z]'))) {
                       setState(() {
-                        _validationMessage = 'Include at least one uppercase letter';
+                        _validationMessage =
+                            'Include at least one uppercase letter';
                         _isValid = false;
                         _shakeController.forward(from: 0.0);
                       });
@@ -964,7 +978,9 @@ Container(
                   decoration: InputDecoration(
                     labelText: 'Password',
                     helperText: 'Min 6 chars, 1 uppercase, 1 number',
-                    errorText: _validationMessage.isNotEmpty ? _validationMessage : null,
+                    errorText: _validationMessage.isNotEmpty
+                        ? _validationMessage
+                        : null,
                     prefixIcon: const Icon(Icons.lock),
                     suffixIcon: AnimatedSwitcher(
                       duration: const Duration(milliseconds: 300),
@@ -1036,13 +1052,16 @@ TextField(
                   height: 80,
                   child: TextField(
                     focusNode: _focusNode,
-                    onChanged: (value) => setState(() => _isTyping = value.isNotEmpty),
+                    onChanged: (value) =>
+                        setState(() => _isTyping = value.isNotEmpty),
                     decoration: InputDecoration(
                       labelText: 'Animated Label',
                       floatingLabelStyle: TextStyle(
-                        color: _focusNode.hasFocus ? Colors.purple : Colors.grey,
+                        color:
+                            _focusNode.hasFocus ? Colors.purple : Colors.grey,
                         fontSize: _isTyping ? 24 : 16,
-                        fontWeight: _isTyping ? FontWeight.bold : FontWeight.normal,
+                        fontWeight:
+                            _isTyping ? FontWeight.bold : FontWeight.normal,
                         shadows: _focusNode.hasFocus
                             ? [
                                 Shadow(
@@ -1056,7 +1075,8 @@ TextField(
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(12),
                         borderSide: BorderSide(
-                          color: _focusNode.hasFocus ? Colors.purple : Colors.grey,
+                          color:
+                              _focusNode.hasFocus ? Colors.purple : Colors.grey,
                           width: _focusNode.hasFocus ? 2 : 1,
                         ),
                       ),
@@ -1184,7 +1204,8 @@ TextField(
     );
   }
 
-  Widget _buildRealWorldExample(String title, List<Map<String, dynamic>> fields) {
+  Widget _buildRealWorldExample(
+      String title, List<Map<String, dynamic>> fields) {
     return Container(
       decoration: BoxDecoration(
         color: Colors.white,
@@ -1213,20 +1234,20 @@ TextField(
           ),
           const Divider(height: 1),
           ...fields.map((field) => Padding(
-            padding: const EdgeInsets.all(16),
-            child: TextField(
-              decoration: InputDecoration(
-                labelText: field['title'],
-                prefixIcon: Icon(field['icon']),
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(8),
+                padding: const EdgeInsets.all(16),
+                child: TextField(
+                  decoration: InputDecoration(
+                    labelText: field['title'],
+                    prefixIcon: Icon(field['icon']),
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                  ),
+                  obscureText: field['title'] == 'Password',
                 ),
-              ),
-              obscureText: field['title'] == 'Password',
-            ),
-          )),
+              )),
         ],
       ),
     );
   }
-} 
+}

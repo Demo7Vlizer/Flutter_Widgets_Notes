@@ -39,6 +39,14 @@ class HomeScreen extends StatelessWidget {
                         onTap: () => Get.toNamed('/widget-comparisons'),
                       ),
                       const Divider(),
+                      ListTile(
+                        leading: const Icon(Icons.code),
+                        title: const Text('Widget Code Examples'),
+                        subtitle: const Text('Learn from real code examples'),
+                        trailing: const Icon(Icons.chevron_right),
+                        onTap: () => Get.toNamed('/widget-code-examples'),
+                      ),
+                      const Divider(),
                       const CategoryListItem(
                         title: 'Basic Widgets',
                         route: '/basic',

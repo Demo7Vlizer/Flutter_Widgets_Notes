@@ -10,6 +10,7 @@ import 'screens/input_widgets/input_widgets_screen.dart';
 import 'screens/widget_details_screen.dart';
 import 'screens/widget_docs_screen.dart';
 import 'screens/widget_comparisons_screen.dart';
+import 'screens/widget_code_examples_screen.dart';
 import 'bindings/app_binding.dart';
 import 'package:flutter_widgets/controllers/widget_controller.dart';
 import 'screens/basic_widgets/text/selectable_text_screen.dart';
@@ -200,6 +201,11 @@ class MyApp extends StatelessWidget {
         GetPage(
           name: '/widget-comparisons',
           page: () => const WidgetComparisonsScreen(),
+          preventDuplicates: true,
+        ),
+        GetPage(
+          name: '/widget-code-examples',
+          page: () => const WidgetCodeExamplesScreen(),
           preventDuplicates: true,
         ),
       ],
